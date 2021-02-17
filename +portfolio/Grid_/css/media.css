@@ -1,0 +1,34 @@
+/* Landscape phone */
+@media screen and (min-width: 576px) {
+  .box {
+    background-color: #ff5216;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .box {
+    background-color: #ffc82c;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+  .box {
+    background-color: #13ce66;
+  }
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1200px) {
+  .box {
+    background-color: #1fb6ff;
+  }
+}
+
+/* Super Large Desktop */
+@media screen and (min-width: 1366px) {
+  .box {
+    background-color: #7e5bef;
+  }
+}
