@@ -5,9 +5,9 @@
 @import './reset.css';
 @import './variables.css';
 
-/* ;
+/* Components */
 
-font-family: 'Roboto Mono', monospace; */
+/* font-family: 'Roboto Mono', monospace; */
 
 body {
   font-family: 'Poppins', sans-serif;
