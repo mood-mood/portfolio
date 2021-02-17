@@ -1,0 +1,87 @@
+.color-chips {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+}
+
+.color-chips-item {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color-chips-item::after {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: var(--font-size-micro);
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+}
+
+.color-chips-item:hover::after {
+  opacity: 1;
+}
+
+.mood {
+  background-color: var(--beige-light);
+}
+
+.mood::after {
+  content: 'mood';
+}
+
+.beauty {
+  background-color: var(--blue-light);
+}
+
+.beauty::after {
+  content: 'beauty';
+}
+
+.interior {
+  background-color: var(--yellow-light);
+}
+
+.interior::after {
+  content: 'interior';
+}
+
+.daily {
+  background-color: var(--cyan-light);
+}
+
+.daily::after {
+  content: 'daily';
+}
+
+.flower {
+  background-color: var(--mlbb-light);
+}
+
+.flower::after {
+  content: 'flower';
+}
+
+.typography {
+  background-color: var(--kaki-light);
+}
+
+.typography::after {
+  content: 'typo';
+}
+
+.travel {
+  background-color: var(--orange-light);
+}
+
+.travel::after {
+  content: 'travel';
+}
