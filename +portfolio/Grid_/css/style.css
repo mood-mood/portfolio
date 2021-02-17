@@ -23,16 +23,14 @@ body {
 
 /* Header */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 50px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 40px;
+  grid-column-gap: 0.8em;
   padding: 0.35em 0.9em;
 }
 
 .header-logo {
-  height: 40px;
   font-family: 'Crimson Text', serif;
   text-transform: uppercase;
   font-size: 2rem;

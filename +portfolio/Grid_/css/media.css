@@ -11,6 +11,10 @@
     background-color: #ffc82c;
   }
 
+  header {
+    justify-items: center;
+  }
+
   .color-chips {
     width: 80%;
     margin-left: -4em;
