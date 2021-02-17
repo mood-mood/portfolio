@@ -1,0 +1,34 @@
+:root {
+  /* Font size */
+  --nav: 1rem;
+  --chips-title: 0.9rem;
+  --chips-sub: 0.75rem;
+
+  /* Font style */
+  --italic: italic;
+
+  /* Padding */
+  --padding: 1.25em;
+
+  /* Image size */
+  --chip-img-width: 140px;
+  --chip-img-height: 210px;
+
+  /* Color chips */
+  --beige-light: #e5d9c3;
+  --beige-dark: #dfcdaa;
+  --blue-light: #7c9ca0;
+  --blue-dark: #63949a;
+  --yellow-light: #d3ac55;
+  --yellow-dark: #d4a335;
+  --cyan-light: #b5cac0;
+  --cyan-dark: #9ec2b2;
+  --mlbb-light: #bb8365;
+  --mlbb-dark: #b96f48;
+  --kaki-light: #b1ad83;
+  --kaki-dark: #aca769;
+  --orange-light: #c98b56;
+  --orange-dark: #c97b37;
+  --white: #fff;
+  --black: #2c2c2c;
+}
