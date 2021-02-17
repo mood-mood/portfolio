@@ -16,8 +16,8 @@
   }
 
   .color-chips {
-    width: 80%;
-    margin-left: -4em;
+    width: 90%;
+    margin-left: -7em;
   }
 
   .color-chips-item::after {
@@ -25,7 +25,6 @@
     top: 50%;
     left: 25px;
     transform: translateY(-50%);
-    font-size: var(--font-size-small);
   }
 }
 
@@ -33,6 +32,10 @@
 @media screen and (min-width: 992px) {
   body {
     background-color: #13ce66;
+  }
+
+  .color-chips {
+    width: 80%;
   }
 
   .color-chips-item:hover::after {
@@ -44,6 +47,9 @@
 @media screen and (min-width: 1200px) {
   body {
     background-color: #1fb6ff;
+  }
+  .color-chips-item::after {
+    font-size: var(--font-size-small);
   }
 }
 
