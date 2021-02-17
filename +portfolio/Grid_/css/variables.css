@@ -1,8 +1,10 @@
 :root {
   /* Font size */
-  --nav: 1rem;
-  --chips-title: 0.9rem;
-  --chips-sub: 0.75rem;
+  --font-size-xlarge: 1.5rem;
+  --font-size-large: 1.2rem;
+  --font-size-regular: 1rem;
+  --font-size-small: 0.9rem;
+  --font-size-micro: 0.75rem;
 
   /* Font style */
   --italic: italic;
@@ -29,6 +31,7 @@
   --kaki-dark: #aca769;
   --orange-light: #c98b56;
   --orange-dark: #c97b37;
+  --gray: #a8a8a8;
   --white: #fff;
   --black: #2c2c2c;
 }
