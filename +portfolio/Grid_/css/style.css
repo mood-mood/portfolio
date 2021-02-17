@@ -1,0 +1,14 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto+Mono:wght@300&display=swap');
+
+/* Reset */
+@import './reset.css';
+@import './variables.css';
+
+/* ;
+
+font-family: 'Roboto Mono', monospace; */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
