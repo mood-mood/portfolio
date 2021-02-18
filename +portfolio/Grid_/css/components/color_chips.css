@@ -12,11 +12,11 @@
   cursor: pointer;
 }
 
-.color-chips-item::after {
+header .color-chips-item::after {
   content: '';
   opacity: 0;
   position: absolute;
-  top: 25px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   text-transform: uppercase;
@@ -26,7 +26,7 @@
   transition: all 0.25s ease-in-out;
 }
 
-.color-chips-item:hover::after {
+header .color-chips-item:hover::after {
   opacity: 1;
 }
 
@@ -34,7 +34,11 @@
   background-color: var(--beige-light);
 }
 
-.mood::after {
+.mood-dark {
+  background-color: var(--beige-dark);
+}
+
+header .mood::after {
   content: 'mood';
 }
 
@@ -42,7 +46,7 @@
   background-color: var(--blue-light);
 }
 
-.beauty::after {
+header .beauty::after {
   content: 'beauty';
 }
 
@@ -50,23 +54,23 @@
   background-color: var(--yellow-light);
 }
 
-.interior::after {
+header .interior::after {
   content: 'interior';
 }
 
-.daily {
+.animal {
   background-color: var(--cyan-light);
 }
 
-.daily::after {
-  content: 'daily';
+header .animal::after {
+  content: 'animal';
 }
 
 .flower {
   background-color: var(--mlbb-light);
 }
 
-.flower::after {
+header .flower::after {
   content: 'flower';
 }
 
@@ -74,7 +78,7 @@
   background-color: var(--kaki-light);
 }
 
-.typography::after {
+header .typography::after {
   content: 'typo';
 }
 
@@ -82,6 +86,6 @@
   background-color: var(--orange-light);
 }
 
-.travel::after {
+header .travel::after {
   content: 'travel';
 }
