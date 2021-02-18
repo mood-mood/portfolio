@@ -1,0 +1,67 @@
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.cards-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: var(--padding);
+  text-align: center;
+}
+
+.cards-item-main {
+  order: 2;
+  margin: 4em auto;
+}
+
+/* hover  */
+
+/* .cards-item:hover .cards-item-main-pic {
+  transform: scale(1.2);
+} */
+
+.cards-item-main-pic {
+  width: var(--chip-img-width);
+  height: var(--chip-img-height);
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  /* transition: 1s; */
+}
+
+.cards-item-main-title {
+  font-style: var(--italic);
+  font-weight: 600;
+}
+
+.mood .cards-item-main-pic {
+  background-image: url(../../assets/animal1.jpg);
+}
+
+.mood-dark .cards-item-main-pic {
+  background-image: url(../../assets/animal2.jpg);
+}
+
+.cards-item-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* font-family: 'Roboto Mono', monospace; */
+  font-weight: 500;
+  font-size: var(--font-size-micro);
+}
+
+.cards-item-sub.top {
+  order: 1;
+}
+
+.cards-item-sub.bottom {
+  order: 3;
+}
