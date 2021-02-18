@@ -46,12 +46,20 @@ header .mood::after {
   background-color: var(--blue-light);
 }
 
+.beauty-dark {
+  background-color: var(--blue-dark);
+}
+
 header .beauty::after {
   content: 'beauty';
 }
 
 .interior {
   background-color: var(--yellow-light);
+}
+
+.interior-dark {
+  background-color: var(--yellow-dark);
 }
 
 header .interior::after {
@@ -62,12 +70,20 @@ header .interior::after {
   background-color: var(--cyan-light);
 }
 
+.animal-dark {
+  background-color: var(--cyan-dark);
+}
+
 header .animal::after {
   content: 'animal';
 }
 
 .flower {
   background-color: var(--mlbb-light);
+}
+
+.flower-dark {
+  background-color: var(--mlbb-dark);
 }
 
 header .flower::after {
@@ -78,12 +94,20 @@ header .flower::after {
   background-color: var(--kaki-light);
 }
 
+.typography-dark {
+  background-color: var(--kaki-dark);
+}
+
 header .typography::after {
   content: 'typo';
 }
 
 .travel {
   background-color: var(--orange-light);
+}
+
+.travel-dark {
+  background-color: var(--orange-dark);
 }
 
 header .travel::after {
