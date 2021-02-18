@@ -2,60 +2,67 @@
 .cards {
   display: grid;
   grid-template-columns: auto;
+  grid-auto-flow: row dense;
 }
 
+.front {
+  width: 100%;
+  height: 100%;
+  order: 2;
+}
+
+/* Card item */
 .cards-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  position: relative;
   width: 100%;
   height: auto;
   padding: var(--padding);
   text-align: center;
+  cursor: pointer;
 }
 
 .cards-item-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   order: 2;
   margin: 4em auto;
 }
 
-/* hover  */
-
-/* .cards-item:hover .cards-item-main-pic {
-  transform: scale(1.2);
-} */
-
 .cards-item-main-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: var(--chip-img-width);
   height: var(--chip-img-height);
   margin-bottom: 20px;
-  background-size: cover;
-  background-position: center;
-  /* transition: 1s; */
+  overflow: hidden;
 }
 
 .cards-item-main-title {
   font-style: var(--italic);
   font-weight: 600;
+  line-height: 1.3;
 }
 
-.mood .cards-item-main-pic {
-  background-image: url(../../assets/animal1.jpg);
+.cards-item-main-pic img {
+  width: 100%;
+  height: auto;
 }
 
-.mood-dark .cards-item-main-pic {
-  background-image: url(../../assets/animal2.jpg);
-}
-
+/* Card item sub */
 .cards-item-sub {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* font-family: 'Roboto Mono', monospace; */
   font-weight: 500;
   font-size: var(--font-size-micro);
+  z-index: 2;
 }
 
 .cards-item-sub.top {
@@ -64,4 +71,37 @@
 
 .cards-item-sub.bottom {
   order: 3;
+}
+
+/* hover effect */
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in-out;
+  z-index: 1;
+}
+
+.back img {
+  width: auto;
+  height: 100%;
+}
+
+.back p {
+  font-size: var(--font-size-small);
+  font-style: var(--italic);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.cards-item:hover .back {
+  opacity: 1;
 }
