@@ -1,9 +1,5 @@
 /* Landscape phone */
 @media screen and (min-width: 576px) {
-  body {
-    background-color: #ff5216;
-  }
-
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -11,10 +7,6 @@
 
 /* tablet */
 @media screen and (min-width: 768px) {
-  body {
-    background-color: #ffc82c;
-  }
-
   header {
     justify-items: center;
   }
@@ -24,7 +16,7 @@
     margin-left: -7em;
   }
 
-  .color-chips-item::after {
+  header .color-chips-item::after {
     opacity: 1;
     top: 50%;
     left: 25px;
@@ -38,15 +30,11 @@
 
 /* Desktop */
 @media screen and (min-width: 992px) {
-  body {
-    background-color: #13ce66;
-  }
-
   .color-chips {
     width: 80%;
   }
 
-  .color-chips-item:hover::after {
+  header .color-chips-item:hover::after {
     border-bottom: 2px solid var(--black);
   }
 
@@ -57,9 +45,6 @@
 
 /* Large Desktop */
 @media screen and (min-width: 1200px) {
-  body {
-    background-color: #1fb6ff;
-  }
   .color-chips-item::after {
     font-size: var(--font-size-small);
   }
@@ -67,10 +52,6 @@
 
 /* Super Large Desktop */
 @media screen and (min-width: 1366px) {
-  body {
-    background-color: #7e5bef;
-  }
-
   .cards {
     grid-template-columns: repeat(6, 1fr);
   }
