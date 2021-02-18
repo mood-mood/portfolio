@@ -3,6 +3,10 @@
   body {
     background-color: #ff5216;
   }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* tablet */
@@ -26,6 +30,10 @@
     left: 25px;
     transform: translateY(-50%);
   }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Desktop */
@@ -40,6 +48,10 @@
 
   .color-chips-item:hover::after {
     border-bottom: 2px solid var(--black);
+  }
+
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -57,5 +69,9 @@
 @media screen and (min-width: 1366px) {
   body {
     background-color: #7e5bef;
+  }
+
+  .cards {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
