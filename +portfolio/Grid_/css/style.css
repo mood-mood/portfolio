@@ -41,17 +41,17 @@ body {
   grid-template-columns: auto 1fr auto;
   grid-template-rows: 40px;
   grid-column-gap: 0.8em;
-  align-items: center;
   padding: 0.35em 0.9em;
   z-index: 5;
 }
 
 .header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   font-family: 'Crimson Text', serif;
   text-transform: uppercase;
   font-size: 2rem;
-  line-height: 1.4;
-  height: 40px;
 }
 
 .header-search {
