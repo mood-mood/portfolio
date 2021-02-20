@@ -7,12 +7,8 @@
 
 /* tablet */
 @media screen and (min-width: 768px) {
-  header {
-    justify-items: center;
-  }
-
   .color-chips {
-    width: 90%;
+    width: 70%;
     margin-left: -5em;
   }
 
