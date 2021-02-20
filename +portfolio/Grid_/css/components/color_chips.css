@@ -7,6 +7,8 @@
 
 .color-chips-item {
   position: relative;
+  left: 0;
+  top: 0;
   width: 16px;
   height: 16px;
   border-radius: 50%;
