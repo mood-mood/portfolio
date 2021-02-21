@@ -1,0 +1,168 @@
+/* Font */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+button,
+button:active {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Variables */
+:root {
+  --margin: 30px;
+}
+
+/* Screen Reader Only */
+.sr-only {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+body {
+  display: grid;
+  gap: var(--margin);
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  background-color: #7e5bef;
+  color: #fefefe;
+  padding: 20px 15px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-family: 'Abril Fatface', cursive;
+  text-transform: uppercase;
+}
+
+.header-btn {
+  padding: 10px;
+  font-size: 10px;
+}
+
+.btn-effect {
+  background: linear-gradient(145deg, #8761ff, #7152d7);
+  box-shadow: 7px 7px 18px #6549bf, -7px -7px 18px #976dff;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Main */
+main {
+  width: 100%;
+}
+
+main nav {
+  margin-bottom: var(--margin);
+}
+
+.nav-link {
+  margin-right: var(--margin);
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #fefefe;
+}
+
+.link-section {
+  font-size: 14px;
+}
+
+/* Aside */
+.side-info-list__item {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.side-info-list__item h3 {
+  margin-bottom: 8px;
+}
+
+.side-info-list__item span {
+  font-size: 14px;
+}
+
+.stack-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stack-icons .icon {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #fefefe;
+  border-radius: 50%;
+  color: transparent;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.stack-icons .icon:first-child {
+  background-image: url(./assets/HTML5_logo_and_wordmark.svg);
+}
+
+.stack-icons .icon:nth-child(2) {
+  background-image: url(./assets/CSS3_logo_and_wordmark.svg);
+}
+
+.stack-icons .icon:nth-child(3) {
+  background-image: url(./assets/Sass_Logo_Color.svg);
+}
+
+.stack-icons .icon:last-child {
+  background-image: url(./assets/Unofficial_JavaScript_logo_2.svg);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    grid-template-areas:
+      'header header '
+      'aside main ';
+    column-gap: 50px;
+  }
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+    height: 80vh;
+  }
+  aside {
+    grid-area: aside;
+  }
+}
