@@ -48,6 +48,8 @@ a {
 }
 
 body {
+  max-width: 1000px;
+  margin: 0 auto;
   display: grid;
   gap: var(--margin);
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
@@ -102,7 +104,12 @@ main nav {
 }
 
 /* Aside */
+.side-info {
+  display: flex;
+  justify-content: center;
+}
 .side-info-list__item {
+  width: 200px;
   padding: 15px;
   margin-bottom: 20px;
 }
@@ -153,16 +160,19 @@ main nav {
     grid-template-areas:
       'header header '
       'aside main ';
-    column-gap: 50px;
+    grid-template-columns: 200px 1fr;
+    column-gap: 70px;
   }
   header {
     grid-area: header;
   }
   main {
     grid-area: main;
-    height: 80vh;
+    height: auto;
+    margin-bottom: var(--margin);
   }
   aside {
+    height: 80vh;
     grid-area: aside;
   }
 }
