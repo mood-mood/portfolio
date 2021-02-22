@@ -1,0 +1,26 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+button,
+button:active {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
