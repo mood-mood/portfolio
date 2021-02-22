@@ -72,11 +72,6 @@ header {
   text-transform: uppercase;
 }
 
-.header-btn {
-  padding: 10px;
-  font-size: 10px;
-}
-
 .btn-effect {
   background: linear-gradient(145deg, #8761ff, #7152d7);
   box-shadow: 7px 7px 18px #6549bf, -7px -7px 18px #976dff;
@@ -103,6 +98,48 @@ main nav {
 
 .link-section {
   font-size: 14px;
+}
+
+/* Portfolio */
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.portfolio-links {
+}
+
+.portfolio-links a {
+  display: block;
+  position: relative;
+  width: 100%;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.portfolio-links a:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-links a::before {
+  content: '👉';
+}
+
+.portfolio-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #592dea;
+  transition: width 0.4s;
+}
+
+.portfolio-links a:hover::after {
+  width: 100%;
 }
 
 /* Aside */
@@ -181,5 +218,9 @@ main nav {
   aside {
     height: 80vh;
     grid-area: aside;
+  }
+
+  .side-info {
+    margin: 0;
   }
 }
