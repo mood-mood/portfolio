@@ -4,7 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1 class="header-logo" aria-label="Portfolio page">pf.</h1>
+      <button class="header-btn btn-effect" type="button" aria-label="change gray tone button">Gray Tone</button>
+    </header>
+    <main>
+      <nav aria-label="page link button">
+        <a class="nav-link" href="./index.html">Index</a>
+        <a class="nav-link active" href="./portfolio.html">Portfolio</a>
+      </nav>
+      <section class="link-section">
+        <h2 class="sr-only">portfolio links</h2>
+        <div class="link">
+          <a href="./+portfolio/Grid_/index.html" target="_blank">Grid page - Like this Mood </a>
+        </div>
+      </section>
+    </main>
+    <aside class="side-info" aria-label="contact infomations">
+      <ul class="side-info-list">
+        <li class="side-info-list__item btn-effect">
+          <a target="_blank" href="https://github.com/mood-mood">
+            <h3>Github</h3>
+            <span>github.com/mood-mood</span>
+          </a>
+        </li>
+        <li class="side-info-list__item btn-effect">
+          <a target="_blank" href="mailto:maid.zero1@gmail.com">
+            <h3>Contact</h3>
+            <span>maid.zero1@gmail.com</span>
+          </a>
+        </li>
+        <li class="side-info-list__item btn-effect">
+          <h3>Tech Stack</h3>
+          <div class="stack-icons">
+            <span class="icon">HTML5</span>
+            <span class="icon">CSS3</span>
+            <span class="icon">SCSS</span>
+            <span class="icon">JS</span>
+          </div>
+        </li>
+      </ul>
+    </aside>
+  </body>
 </html>
