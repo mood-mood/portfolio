@@ -84,3 +84,32 @@ header {
 .header-text cite {
   font-size: 13px;
 }
+
+/* Main */
+main {
+  background-color: #f6f5e8;
+}
+
+.body-title {
+  padding: 20px 10px 10px;
+  font-weight: normal;
+}
+
+/* Nav */
+.nav-bar {
+  display: flex;
+  overflow: auto;
+  margin-bottom: 30px;
+}
+
+.nav-bar-list {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.nav-bar-list li {
+  padding: 5px 10px;
+  font-size: 13px;
+}
