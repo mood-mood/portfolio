@@ -11,9 +11,6 @@
 @import './components/color_chips.css';
 @import './components/cards_item.css';
 
-/* media */
-@import './media.css';
-
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--black);
@@ -59,4 +56,60 @@ body {
 .header-search {
   height: 30px;
   color: var(--black);
+}
+
+/* Media */
+/* Landscape phone */
+@media screen and (min-width: 576px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .color-chips {
+    width: 70%;
+    margin-left: -5em;
+  }
+
+  header .color-chips-item::after {
+    opacity: 1;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+  .color-chips {
+    width: 80%;
+  }
+
+  header .color-chips-item:hover::after {
+    border-bottom: 2px solid var(--black);
+  }
+
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1200px) {
+  .color-chips-item::after {
+    font-size: var(--font-size-small);
+  }
+}
+
+/* Super Large Desktop */
+@media screen and (min-width: 1366px) {
+  .cards {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
