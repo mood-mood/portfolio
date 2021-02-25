@@ -1,0 +1,30 @@
+.portfolio {
+  @include flex(center);
+  height: 200px;
+  &-links a {
+    display: block;
+    position: relative;
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: $margin;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::before {
+      content: "👉";
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px;
+      background-color: #592dea;
+      transition: width 0.4s ease-in-out;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
