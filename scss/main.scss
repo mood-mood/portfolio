@@ -1,0 +1,43 @@
+@import "./reset";
+@import "./variables";
+@import "./header";
+@import "./section";
+@import "./portfolio";
+@import "./aside";
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: $margin;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 20px 15px;
+}
+
+@include tablet {
+  body {
+    grid-template-areas:
+      "header header "
+      "aside main ";
+    grid-template-columns: 200px 1fr;
+    column-gap: 70px;
+  }
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+    height: auto;
+    margin-bottom: var(--margin);
+  }
+  aside {
+    height: 80vh;
+    grid-area: aside;
+  }
+
+  .side-info {
+    margin: 0;
+  }
+}
