@@ -1,0 +1,23 @@
+$margin: 30px;
+$primary-color: #7e5bef;
+$secondary-color: #fefefe;
+// media
+$breakpoint-tablet: 758px;
+
+@mixin flex($justify-content) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+}
+
+@mixin btnEffect {
+  background: linear-gradient(145deg, #8761ff, #7152d7);
+  box-shadow: 7px 7px 18px #6549bf, -7px -7px 18px #976dff;
+  border-radius: 20px;
+}
+
+@mixin tablet {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
