@@ -1,0 +1,16 @@
+main {
+  width: 100%;
+  nav {
+    margin-bottom: $margin;
+
+    .nav-link {
+      margin-right: $margin;
+      &.active {
+        border-bottom: 2px solid $secondary-color;
+      }
+    }
+  }
+  .link-section {
+    font-size: 14px;
+  }
+}
