@@ -1,0 +1,7 @@
+.header {
+  @include flex(space-between);
+  &-logo {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+  }
+}
