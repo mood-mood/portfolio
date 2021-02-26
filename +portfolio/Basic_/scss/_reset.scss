@@ -30,6 +30,7 @@ button {
 
 input {
   @extend button;
+  border-radius: none;
   &:focus {
     @extend button;
   }

@@ -24,6 +24,10 @@ button, button:active, input, input:focus, input:active {
   cursor: pointer;
 }
 
+input {
+  border-radius: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
