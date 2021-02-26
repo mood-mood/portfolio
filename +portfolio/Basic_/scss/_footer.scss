@@ -1,0 +1,11 @@
+.footer {
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    font-size: $font-micro;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
