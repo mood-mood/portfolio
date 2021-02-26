@@ -1,0 +1,11 @@
+@mixin landscape {
+  @media (min-width: $breakpoint-landscape) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
