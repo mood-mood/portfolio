@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: $gap-20 $gap-10;
+  &__logo {
+    font-family: "Playfair Display", serif;
+    font-size: $font-xlarge;
+  }
+  &__item {
+    transition: color 0.35s ease-in-out;
+    &:hover {
+      color: $green-color;
+    }
+  }
+}
