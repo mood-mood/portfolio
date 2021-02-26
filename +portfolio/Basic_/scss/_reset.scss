@@ -1,0 +1,50 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,400&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  &:active {
+    @extend button;
+  }
+}
+
+input {
+  @extend button;
+  &:focus {
+    @extend button;
+  }
+  &:active {
+    @extend button;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: $white-color;
+  overflow-x: hidden;
+}
