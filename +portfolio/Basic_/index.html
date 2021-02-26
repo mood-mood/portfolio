@@ -5,26 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="header-nav">
-        <span class="header-nav__logo">G</span>
-        <ul class="header-nav__list">
-          <li class="header-nav__item"><a href="#">about</a></li>
-          <li class="header-nav__item"><a href="#">articles</a></li>
-          <li class="header-nav__item"><a href="#">subscribe</a></li>
+      <nav class="nav">
+        <span class="nav__logo" aria-label="page logo G">G</span>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about">about</a></li>
+          <li class="nav__item"><a href="#articles">articles</a></li>
+          <li class="nav__item sub-btn">
+            <a href="#subscribe">subscribe</a>
+          </li>
         </ul>
       </nav>
       <div class="header-text">
         <h1 class="header-text__title">Green</h1>
-        <p class="header-text__desc">Lorem ipsum dolor sit.</p>
+        <p class="header-text__desc">Lorem ipsum dolor sit</p>
         <span class="line"></span>
       </div>
     </header>
     <main>
-      <section class="about section">
+      <section id="about" class="about section">
         <div class="section-text">
           <h2 class="section-text__title">Green color</h2>
           <p class="section-text__sub">a color chip</p>
@@ -37,7 +39,7 @@
           </p>
         </div>
       </section>
-      <section class="article section">
+      <section id="articles" class="article section">
         <div class="section-text">
           <h2 class="section-text__title">Green article</h2>
           <p class="section-text__sub">a color chip posts</p>
@@ -67,7 +69,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe section">
+      <section id="subscribe" class="subscribe section">
         <div class="section-text">
           <h2 class="section-text__title">Subscribe</h2>
           <p class="section-text__sub">sign up to our newsletter</p>
@@ -79,13 +81,13 @@
         </form>
       </section>
     </main>
-    <footer>
-      <nav class="footer-nav">
-        <span class="footer-nav__logo">G</span>
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item"><a href="#">about</a></li>
-          <li class="footer-nav__item"><a href="#">articles</a></li>
-          <li class="footer-nav__item"><a href="#">subscribe</a></li>
+    <footer class="footer">
+      <nav class="nav">
+        <span class="nav__logo">G</span>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about">about</a></li>
+          <li class="nav__item"><a href="#articles">articles</a></li>
+          <li class="nav__item"><a href="#subscribe">subscribe</a></li>
         </ul>
       </nav>
     </footer>
