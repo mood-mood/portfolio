@@ -1,0 +1,374 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,400&display=swap");
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+button, button:active, input, input:focus, input:active {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.line {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 2px;
+  background-color: #fefefe;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../assets/frosty-ilze-0K0WuURTMKI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 70px;
+  margin-top: 1em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+}
+
+.header-text__title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+}
+
+.header-text__desc {
+  margin-bottom: 10px;
+  color: #7ea080;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.nav__logo {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+}
+
+.nav__item {
+  -webkit-transition: color 0.35s ease-in-out;
+  transition: color 0.35s ease-in-out;
+}
+
+.nav__item:hover {
+  color: #7ea080;
+}
+
+.section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.section-text {
+  margin-bottom: 20px;
+}
+
+.section-text__title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-text__sub {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #7ea080;
+}
+
+.section-text__desc {
+  width: 300px;
+  margin: 20px auto 0;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.about,
+.subscribe {
+  background-color: #1d331f;
+}
+
+.article,
+.footer {
+  background-color: #2f4d31;
+}
+
+.article-post {
+  padding: 0 10px;
+}
+
+.article-post__item {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 5px 15px 0px var(--primary-color);
+          box-shadow: 0px 5px 15px 0px var(--primary-color);
+  cursor: pointer;
+}
+
+.article-post__item:first-child {
+  background-image: url(../assets/vanessa-serpas-aZNA3iOanEs-unsplash.jpg);
+}
+
+.article-post__item:nth-child(2) {
+  background-image: url(../assets/frosty-ilze-IeLgjycwrgE-unsplash.jpg);
+}
+
+.article-post__item:last-child {
+  background-image: url(../assets/frosty-ilze-LlvfEJXGnc4-unsplash.jpg);
+}
+
+.article-post-text {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-transform: uppercase;
+}
+
+.article-post-text__title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.article-post-text__sub {
+  font-size: 0.9rem;
+  color: #7ea080;
+  margin-bottom: 10px;
+}
+
+.form {
+  width: 70%;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+}
+
+.form-input {
+  width: 100%;
+  height: 50px;
+  background-color: #2f4d31;
+  border: 2px solid #7ea080;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.form-input:focus {
+  background-color: #2f4d31;
+  color: #fefefe;
+  border: 2px solid #7ea080;
+}
+
+.form-input::-webkit-input-placeholder {
+  color: #fefefe;
+}
+
+.form-input:-ms-input-placeholder {
+  color: #fefefe;
+}
+
+.form-input::-ms-input-placeholder {
+  color: #fefefe;
+}
+
+.form-input::placeholder {
+  color: #fefefe;
+}
+
+.form-btn {
+  width: 100%;
+  height: 50px;
+  background-color: #2f4d31;
+  border: 2px solid #7ea080;
+  padding: 10px 20px;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  -webkit-transition: background-color 0.35s;
+  transition: background-color 0.35s;
+}
+
+.form-btn:hover, .form-btn:active {
+  background-color: #2f4d31;
+}
+
+.footer .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #fefefe;
+  overflow-x: hidden;
+}
+
+@media (min-width: 567px) {
+  .header .nav__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 35%;
+    height: auto;
+    margin-top: 0;
+  }
+  .header .sub-btn {
+    padding: 7px 10px;
+    border: 1px solid #fefefe;
+    -webkit-transition: border 0.25s;
+    transition: border 0.25s;
+  }
+  .header .nav__item:hover.sub-btn {
+    border: 1px solid #7ea080;
+  }
+  .section-text__desc {
+    width: 400px;
+  }
+  .article-post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .article-post__item {
+    width: 30%;
+  }
+  .form-btn {
+    width: 35%;
+    margin: 0 auto;
+  }
+  .footer .nav__list {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .article-post {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .nav {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .nav__list {
+    width: 30%;
+  }
+  .article-post__item {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    transition: transform 0.35s, -webkit-transform 0.35s;
+  }
+  .article-post__item:hover {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
