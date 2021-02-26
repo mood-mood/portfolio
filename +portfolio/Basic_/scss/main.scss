@@ -1,6 +1,14 @@
-@import "./reset";
-@import "./variables";
-@import "./header";
-@import "./nav";
-@import "./section";
-@import "./resposive";
+@import "reset";
+@import "variables";
+@import "header";
+@import "nav";
+@import "section";
+@import "footer";
+@import "responsive";
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: $white-color;
+  overflow-x: hidden;
+}
+
