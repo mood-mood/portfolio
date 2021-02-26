@@ -12,3 +12,66 @@ body {
   overflow-x: hidden;
 }
 
+// Media
+@include landscape {
+  .header {
+    & .nav__list {
+      flex-direction: row;
+      align-items: center;
+      width: 35%;
+      height: auto;
+      margin-top: 0;
+    }
+    & .sub-btn {
+      padding: 7px $gap-10;
+      border: 1px solid $white-color;
+      transition: border 0.25s;
+    }
+    & .nav__item:hover.sub-btn {
+      border: 1px solid $green-color;
+    }
+  }
+  .section-text__desc {
+    width: 400px;
+  }
+  .article-post {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__item {
+      width: 30%;
+    }
+  }
+  .form-btn {
+    width: 35%;
+    margin: 0 auto;
+  }
+
+  .footer {
+    & .nav__list {
+      width: 30%;
+    }
+  }
+}
+
+@include tablet {
+  .article-post {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    &__list {
+      width: 30%;
+    }
+  }
+
+  .article-post__item {
+    transition: transform 0.35s;
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
