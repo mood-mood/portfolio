@@ -1,0 +1,43 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../assets/frosty-ilze-0K0WuURTMKI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  & .nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 70px;
+    margin-top: 1em;
+    font-size: $font-micro;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  &-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    &__title {
+      font-family: "Playfair Display", serif;
+      font-size: $font-xlarge;
+    }
+    &__desc {
+      margin-bottom: $gap-10;
+      color: $green-color;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+}
