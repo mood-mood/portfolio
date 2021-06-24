@@ -1,5 +1,5 @@
-# portfolio
-🌻 Portfolio Project
+# portfolio_ver.1
+🌻 Portfolio Project version 1
 
 
 This is not for commercial use.<br>
